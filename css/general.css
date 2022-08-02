@@ -1,0 +1,75 @@
+:root{
+    --main-color: #B8CB3B;
+    --gray-color: #27364A;
+    --p-color: #1b2839;
+    --bcg-color: #151D25;
+    --main-transition: .3s;
+    --section-padding: 6rem;
+    --main-lnhgt: 1.8;
+}
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+body{
+    font-family: system-ui;
+    font-weight: 400;
+}
+h1,h2,h3,.foody-logo,.testim-name,.menu-link{
+    font-family: cursive , sans-serif;
+}
+ul{
+    list-style: none;
+}
+a{
+    color: inherit;
+    text-decoration: none;
+}
+.container{
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+/* SMALL DEVICES: 768px */
+@media(min-width: 48em){
+    .container{
+        width: 75rem;
+    }
+}
+/* MEDIUM DEVICES: 992px */
+@media(min-width: 62em){
+    .container{
+        width: 97rem;
+    }
+}
+@media(max-width: 70em){
+}
+/* LARGE DEVICES: 1200px */
+@media(min-width: 75em){
+    .container{
+        width: 117rem;
+    }
+}
+.primary-heading{
+    font-size: 3rem;
+    color: var(--gray-color);
+    padding-bottom: 3rem;
+    margin-bottom: 3rem;
+    width: fit-content;
+    position: relative;
+}
+.btn{
+    font-size: 1.6rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 1rem 4rem;
+    background-color: var(--bcg-color);
+    transition: all var(--main-transition);
+}
+.btn:hover{
+    background-color: #1B324A;
+}
